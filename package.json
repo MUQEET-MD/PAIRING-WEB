@@ -1,40 +1,42 @@
 {
-  "name": "qasim",
-  "version": "0.0.1",
-  "type": "commonjs",
-  "description": "A multi-functional WhatsApp bot Pairing Web and QR Scanner.",
+  "name": "Emilia",
+  "version": "3.0.0",
+  "description": "Emilia",
   "main": "index.js",
-  "engines": {
-    "node": ">=20.0.0"
-    },
   "scripts": {
-    "run": "pm2 start index.js --deep-monitoring --attach --name qasim",
-    "qasim": "pm2 start index.js --deep-monitoring --attach --name qasim",
-    "start": "pm2 start index.js --deep-monitoring --attach --name qasim",
-    "stop": "pm2 stop qasim",
-    "restart": "pm2 restart qasim",
-    "reload": "pm2 reload qasim",
-    "dev": "nodemon index.js"
+    "start": "node index.js"
   },
-  "keywords": [
-    "baileysQr", "MdLogin", "MEGA-AI", "whatsapp-bot", "BotWhatsapp", "whatsapp-web", "whatsapp", "session", "pair-code", "express-pairing", "whatsappbot", "express-session", "whatsapp-api", "pairing", "baileys-md", "baileys-bot",
-    "whatsappLogin", "adiwajshing/baileys", "baileys-md-qr", "multi-device-qr", "whiskey sockets/baileys", "md-pair", "bot-pair", "baileysQrScanner", "botpairing", "WhatsAppPairing", "LinkDevice"
-  ],
-  "author": "GlobalTechInfo",
+  "author": "Ayame",
   "license": "MIT",
   "dependencies": {
+    "@adiwajshing/keyed-db": "^0.2.4",
     "@hapi/boom": "^10.0.1",
-    "@whiskeysockets/baileys": "^6.7.12",
-    "dotenv": "^16.4.7",
-    "fs-extra": "^11.3.0",
-    "node-fetch": "^2.6.1",
-    "pastebin-api": "^7.0.0",
-    "pino": "^8.1.0",
-    "phone": "3.1.30",
-    "body-parser": "^1.20.1",
+"@whiskeysockets/baileys": "github:DaffaDeveloper/daf-bails",
+    "awesome-phonenumber": "^2.64.0",
+    "axios": "^1.6.8",
+    "pino": "^7.0.5", 
+    "crypto":"^1.0.1",
+    "fs":"0.0.1-security",
+    "fs-extra":"^10.0.0",
+    "moment-timezone":"^0.5.43",
+    "human-readable":"^0.2.1",
+    "util":"^0.12.5",
+    "jimp":"^0.16.1",
+    "@hapi/boom": "^10.0.1",
+    "lodash": "^4.17.21",
+    "lowdb": "^2.1.0",
+    "yargs": "^17.7.2",
+    "mongoose":"^6.2.1",
+    "btch-downloader": "npm:btch-downloader@latest",
+    "node-fetch": "^2.6.11",
+    "node-webpmux": "^3.1.1",
     "path": "^0.12.7",
-    "express": "^4.18.1",
-    "pm2": "^5.4.2",
-    "qrcode": "^1.5.3"
+    "fluent-ffmpeg": "^2.1.2",
+    "os": "^0.1.1",
+    "didyoumean": "^1.2.2",
+    "similarity": "^1.2.1",
+    "string-similarity": "^4.0.4",
+    "yt-search": "^2.12.1",
+    "chalk": "^4.1.2"
   }
 }
